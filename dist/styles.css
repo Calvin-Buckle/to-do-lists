@@ -7,6 +7,8 @@
 
 .header{
     background-color: rgba(255, 255, 255, 0.473);
+    display: flex;
+    justify-content: center;
 }
 
 .content{
@@ -15,11 +17,83 @@
     background-color:rgba(0, 0, 255, 0.315);
     
 }
+
+
+
+
+
 .project-board{
     background-color: aqua;
+    display: grid;
+    justify-content: center;
+    grid-template-rows:60px 420px ;
+    grid-template-columns: 200px;
 }
-.to-do-lists{
-    background-color: blueviolet;
+
+.button-holder{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height:50px ;
+    gap: 10px;
 }
+
+
+
+
+
+
+
+.to-do-list{
+    background-color: rgba(104, 162, 236, 0.842);
+}
+
+.to-do-list-header{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.233);
+    
+}
+
+.to-do-list-holder{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+   
+}
+
+.to-do-item{
+    display: flex;
+    height: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left:30px;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.233);
+    padding:3px;
+}
+#check-item{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.add-to-do-list-item{
+    width: 110px;
+    margin-left:30px;
+    padding:3px;
+   
+}
+
+
+
+
+
+
+
+
+
 
 .footer{background-color:rgba(128, 128, 128, 0.397) ;}
