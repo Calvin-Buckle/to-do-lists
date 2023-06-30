@@ -1,0 +1,25 @@
+.container{
+    height:637px;
+    background-color: black;
+    display:grid;
+    grid-template-rows: 100px 487px 50px;
+}
+
+.header{
+    background-color: rgba(255, 255, 255, 0.473);
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 250px 1090px ;
+    background-color:rgba(0, 0, 255, 0.315);
+    
+}
+.project-board{
+    background-color: aqua;
+}
+.to-do-lists{
+    background-color: blueviolet;
+}
+
+.footer{background-color:rgba(128, 128, 128, 0.397) ;}
