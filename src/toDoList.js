@@ -1,4 +1,10 @@
+import projectAddPressed from "./addButton";
+
+
 function initialLoad(){
+  
+
+
 
     const container = document.querySelector('.container')
    
@@ -47,6 +53,12 @@ function initialLoad(){
                 toDoList.appendChild(toDoListHolder);
       const footer = document.querySelector('.footer');
       container.appendChild(footer)
+
+
+
+
+
+      projectAddPressed();
 }
 
 export default initialLoad;
