@@ -1,4 +1,5 @@
 
+import toDoAdd from "./todo";
 
 function pressSubmit (){
 
@@ -11,20 +12,38 @@ let myLibrary = [];
 function project(name){
     this.name = name;};
 
+
+
+
+
     function render(){
         let libraryEl = document.querySelector('.list-Item');
          libraryEl.innerHTML = "";
         for (let i = 0; i < myLibrary.length; i++){
         let task = myLibrary[i]
-        let taskEl = document.createElement("div");
+        let taskEl = document.createElement("button");
+        taskEl.classList.add('task-Button')
         taskEl.innerHTML = `<p>${task.name}<p>`
-        libraryEl.appendChild(taskEl)}};
+        libraryEl.appendChild(taskEl)}
+    
+    
+        const taskSelected = document.querySelector('.task-Button');
+        taskSelected.addEventListener('click', (e) =>{
+        
+            
+          toDoAdd();
+        
+        })
+        
+        
+    
+    };
 
 
         
 //Pressing submit
 const submitButton = document.querySelector('#project-Submit');
-submitButton.addEventListener('click', (e) => {
+submitButton.addEventListener('click', (e) =>{
     addTaskToLibrary();
     preventAndNone(e);
   
@@ -51,6 +70,12 @@ cancelButton.addEventListener('click', (e) =>{
     preventAndNone(e);
     
 })
+
+
+
+//Clicking on a task div
+
+
 
 
 

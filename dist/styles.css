@@ -32,6 +32,11 @@ display:none;
 }
 
 
+#addToDoForm{
+    display:none;
+}
+
+
 
 .project-board{
     background-color: aqua;
@@ -43,6 +48,17 @@ display:none;
     border-color: black;
 }
 
+
+
+div.list-Item{
+    
+    background-color: whitesmoke;
+
+   
+}
+div.list-Item:hover{
+    background-color: rgb(123, 166, 204);
+}
 
 
 
