@@ -4,8 +4,9 @@ function projectAddPressed(){
   const addProjectForm = document.querySelector('#addProjectForm');
     
     addButton.addEventListener('click', function callForm (e){
-       addProjectForm.style.display = 'block';})
-
+       addProjectForm.style.display = 'block';
+      })
+ 
 }
 
 

@@ -1,3 +1,5 @@
-import loadPage from "./loadPage";
+import projectAddPressed from "./addButton";
+import pressSubmit from "./task";
 
-loadPage();
+projectAddPressed();
+pressSubmit();

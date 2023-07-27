@@ -7,22 +7,33 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="main-container">
       <div class="header"><h1>Welcome</h1></div>
-       <div class="project-board"> 
+      <div class="board-container">
+       <div class="project-board">
+        <div class="project-header">Projects</div>
+        <div class="project-content">
+        <div class="list-Item"></div>
         <form id="addProjectForm">
         <fieldset>
-          <input type="text" name="addProjectForm">
-          <button id="projectSubmit">Submit</button> <button id="projectCancel">Cancel</button>
+          <label for="text">Name of Project</label>
+          <input type="text" id="name-input" name="addProjectForm">
+          <button id="project-Submit">Submit</button> <button id="projectCancel">Cancel</button>
         </fieldset></form>
+        <div class="button-holder"><button class="project-add">Add</button></div>
+
+
 
        </div>
-        <div class="to-do-list">
+      </div>
+        <div class="to-do-list"></div>
+      </div>
+
+
       <div class="footer"></div>
+ 
 
-
-    </div>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 
     
 </body>
