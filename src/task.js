@@ -70,14 +70,7 @@ cancelButton.addEventListener('click', (e) =>{
     preventAndNone(e);
     
 })
-
-
-
 //Clicking on a task div
-
-
-
-
 
 }
 
