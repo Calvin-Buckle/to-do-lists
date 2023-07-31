@@ -56,7 +56,7 @@ function formClass(){
     //Links cancel button to fieldset
     fieldsetElement.appendChild(formCancelElement)
 
-
+//Creates the To Do when you click submit on the form
 const toDoSubmit = document.querySelector('.to-Do-Submit');
 toDoSubmit.addEventListener('click', (e) =>{
 
@@ -65,6 +65,13 @@ toDoSubmit.addEventListener('click', (e) =>{
     e.preventDefault();
 
 })
+
+//Deletes the form when you press cancel
+const toDoCancel = document.querySelector('.to-Do-Cancel');
+toDoCancel.addEventListener('click', (e) =>{
+    fieldsetElement.remove();
+})
+
 }
 
 
