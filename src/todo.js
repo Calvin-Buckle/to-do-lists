@@ -82,7 +82,21 @@ function render(){
     let toDo = toDoLibrary[i];
     let toDoEl = document.createElement("div");
     toDoEl.innerHTML = `<p>${toDo.toDoName}<p>`
-    toDoLibraryEl.appendChild(toDoEl)}};
+    toDoLibraryEl.appendChild(toDoEl)
+    const deleteToDo = document.createElement('button');
+    deleteToDo.innerHTML = 'X';
+    deleteToDo.classList.add('deleteToDo')
+    toDoEl.appendChild(deleteToDo);
+
+    deleteToDo.addEventListener('click', (e) => {
+        toDoEl.remove()
+    })
+}
+
+
+
+
+};
 
 
 
@@ -93,7 +107,8 @@ function render(){
         render();
         addProjectForm.style.display = 'none';
         createAddToDo();}
-
+       
+       
 
 
 }
