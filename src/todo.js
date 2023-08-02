@@ -10,6 +10,7 @@ createAddToDo();
 //create the add Button for to do
 function createAddToDo(){
 
+    
 const addToDoButton = document.createElement('button');
 addToDoButton.classList.add('addToDo');
 addToDoButton.innerHTML = 'Add to Do';
@@ -21,6 +22,7 @@ let toDoForm = document.querySelector('#addToDoForm')
 document.querySelector('.addToDo').addEventListener('click', (e) =>{
    
     formClass();
+    
 })
 }
 

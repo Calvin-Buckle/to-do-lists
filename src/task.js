@@ -76,13 +76,22 @@ function project(name){
         libraryEl.appendChild(taskEl)}
     
     
+
+
+              
+   
+    
+      var checker = 0;
+     
         const taskSelected = document.querySelector('.task-Button');
         taskSelected.addEventListener('click', (e) =>{
+          if (checker == 0){toDoAdd(); checker = 1}
+          
+
+
+        } )
         
-            
-          toDoAdd();
-        
-        })}
+         }
         
         
     
